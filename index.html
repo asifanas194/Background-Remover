@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Real Background Remover</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <h1>Background Remover</h1>
+    </header>
+
+    <div class="content">
+      <!-- File Upload Section -->
+      <div class="upload-section">
+        <input type="file" id="fileInput" />
+        <button onclick="removeBackground()">🖌️ Remove Background</button>
+      </div>
+
+      <!-- Loader Section -->
+      <div class="loader-container">
+        <div class="loader" id="loader">⏳ Processing...</div>
+      </div>
+
+      <!-- Canvas to Show Processed Image -->
+      <div class="image-container">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <!-- Download Button -->
+      <div class="download-container">
+        <button id="downloadBtn" style="display: none;">⬇️ Download Image</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
